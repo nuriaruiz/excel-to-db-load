@@ -31,22 +31,18 @@ public class ManageExcelDataServiceImpl implements IManageExcelDataService {
 
         List<String> list = new ArrayList<String>();
 
-        // Create a DataFormatter to format and get each cell's value as String
         DataFormatter dataFormatter = new DataFormatter();
 
-        // Create the Workbook
         try {
             workbook = WorkbookFactory.create(new File(EXCEL_FILE_PATH));
         } catch (EncryptedDocumentException | IOException e) {
             e.printStackTrace();
         }
-        // Getting the Sheet at index zero
+
         Sheet sheet = workbook.getSheetAt(0);
 
-        // Getting number of columns in the Sheet
         int columnsNumber = sheet.getRow(0).getLastCellNum();
 
-        // Loop all rows and cells of the sheet
         for (Row row : sheet) {
             for (Cell cell : row) {
                 String cellValue = dataFormatter.formatCellValue(cell);
@@ -54,10 +50,8 @@ public class ManageExcelDataServiceImpl implements IManageExcelDataService {
             }
         }
 
-        // filling excel data and creating list as List<Invoice>
         List<DataToSaveEntity> dataList = createList(list, columnsNumber);
 
-        // Closing the workbook
         try {
             workbook.close();
         } catch (IOException e) {
