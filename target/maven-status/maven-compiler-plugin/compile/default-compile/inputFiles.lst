@@ -1,9 +1,0 @@
-/Users/nuriaruiz/Downloads/excel-to-db/src/main/java/com/example/exceltodb/configuration/WebConfiguration.java
-/Users/nuriaruiz/Downloads/excel-to-db/src/main/java/com/example/exceltodb/service/IManageExcelDataService.java
-/Users/nuriaruiz/Downloads/excel-to-db/src/main/java/com/example/exceltodb/ExcelToDbApplication.java
-/Users/nuriaruiz/Downloads/excel-to-db/src/main/java/com/example/exceltodb/repository/DataRepository.java
-/Users/nuriaruiz/Downloads/excel-to-db/src/main/java/com/example/exceltodb/service/IFileUploaderService.java
-/Users/nuriaruiz/Downloads/excel-to-db/src/main/java/com/example/exceltodb/entity/DataToSaveEntity.java
-/Users/nuriaruiz/Downloads/excel-to-db/src/main/java/com/example/exceltodb/service/impl/ManageExcelDataServiceImpl.java
-/Users/nuriaruiz/Downloads/excel-to-db/src/main/java/com/example/exceltodb/controller/UploadController.java
-/Users/nuriaruiz/Downloads/excel-to-db/src/main/java/com/example/exceltodb/service/impl/FileUploaderServiceImpl.java
